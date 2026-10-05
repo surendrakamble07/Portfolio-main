@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atharv's Portfolio</title>
+    <link rel="icon" href="./images/logo.png" />
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    /> -->
+    <!-- Add -->
+    <link href="./resources/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="index.css" rel="stylesheet" />
+
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <!-- Add -->
+    <link rel="stylesheet" href="./resources/aos.css" />
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/ScrollMagic.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/debug.addIndicators.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/animation.gsap.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/TweenLite.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/TimelineLite.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/CSSPlugin.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/BezierPlugin.min.js"></script>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- Add -->
+    <script src="./resources/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/aos.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/jquery-3.5.1.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/typed.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Add -->
+    <!-- <link rel="stylesheet" href="./resources/all.min.css" /> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+    <!-- Add -->
+    <script src="./resources/jquery.waypoints.min.js"></script>
+
+    <!-- <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    /> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> -->
+
+    <!-- <script src="https://raw.githubusercontent.com/JohnBlazek/codepen-resources/master/3d-carousel/js/libs.min.js"></script> -->
+    
+  </head>
+  <body>
+    <!-- Home Page -->
+    <div class="bg-image bgimage">
+      <!-- NavBar -->
+      <div class="container-fluid h-100 d-flex flex-column text-center">
+        <div class="row" style="height: 10%">
+          <div class="col align-self-center">
+            <img src="./images/logo.png" alt="LOGO" />
+          </div>
+        </div>
+        <div class="row flex-grow-1">
+          <div class="col-3 align-self-end resp-nav">
+            <nav class="navbar bg-body-transparent fixed-bottom mb-5 nav">
+              <div class="container-fluid">
+                <a class="navbar-brand navbar-item" href="#education"
+                  >EDUCATION</a
+                >
+              </div>
+              <div class="container-fluid">
+                <a class="navbar-brand navbar-item" href="#experience"
+                  >EXPERIENCE</a
+                >
+              </div>
+              <div class="container-fluid">
+                <a class="navbar-brand navbar-item" href="#projects"
+                  >PROJECTS</a
+                >
+              </div>
+              <div class="container-fluid">
+                <a class="navbar-brand navbar-item" href="#certifications"
+                  >CERTIFICATIONS</a
+                >
+              </div>
+              <div class="container-fluid">
+                <a class="navbar-brand navbar-item" href="#creative-side"
+                  >CREATIVE SIDE</a
+                >
+              </div>
+              <div class="container-fluid">
+                <a class="navbar-brand navbar-item" href="#contactme"
+                  >CONTACT ME</a
+                >
+              </div>
+            </nav>
+          </div>
+          <!-- Content -->
+          <div class="col-lg col-sm-12 align-self-center">
+            <div class="image-container">
+              <div
+                class="name"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine"
+              >
+                ATHARV
+                <br />
+                PATIL
+              </div>
+              <img
+                src="./images/main_pic.png"
+                alt="Main Pic"
+                class="main-image"
+              />
+            </div>
+          </div>
+          <div class="col align-self-center">
+            <div class="typing-animation">
+              <div class="text"><span class="typing"></span></div>
+            </div>
+            <div class="line"></div>
+            <div class="about-me">
+              Hey, I am a Software Engineer II at J.P. Morgan Chase, building
+              full-stack systems and AI/RAG-powered solutions. I work across
+              backend, frontend, and intelligent application workflows, and I am
+              also an incoming MSCS student at USC. I enjoy building practical
+              technology that turns complex ideas into useful products.
+            </div>
+            <a href="#education">
+              <div class="scroll-down"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <section class="edu-section" id="education">
+      <div class="container px-5">
+        <div class="row">
+          <div class="col-lg">
+            <div class="section-title">
+              <h2 class="mb-4 heading-education">Education</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4 justify-content-center">
+          <div class="col-lg-6 col-md-6 edu-card">
+            <div class="edu-block mb-5 mb-lg-0">
+              <img src="images/svnit.png" alt="SVNIT" class="img-fluid" />
+              <div class="edu-content">
+                <span class="d-block py-2"
+                  >BTech in Computer Science & Engineering</span
+                >
+                <h4 class="pb-2">SVNIT, Surat</h4>
+              </div>
+
+              <div class="overlay-content">
+                <span class="d-block"
+                  >BTech in Computer Science & Engineering</span
+                >
+                <h4 class="pb-4">SVNIT, Surat</h4>
+                <p>2020-2024</p>
+                <p>CGPA: 8.75</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 edu-card">
+            <div class="edu-block">
+              <img src="images/usc.jpg" alt="USC" class="img-fluid" />
+              <div class="edu-content">
+                <span class="d-block py-2">MS in Computer Science</span>
+                <h4 class="pb-2">University of Southern California</h4>
+              </div>
+
+              <div class="overlay-content">
+                <span class="d-block">MS in Computer Science</span>
+                <h4 class="pb-4">University of Southern California</h4>
+                <p>2026-2028 Expected</p>
+                <p>Incoming Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience-section">
+      <div class="container px-5">
+        <div class="row">
+          <div class="col-lg">
+            <div class="section-title">
+              <h2 class="mb-4 heading-education">Experience</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 experience-grid">
+          <div class="col-lg-4 col-md-6">
+            <div class="experience-card">
+              <span class="experience-tag">Jan 2026 - Jun 2026</span>
+              <h3>Software Engineer II</h3>
+              <p class="experience-meta">J.P. Morgan Chase & Co. | Mumbai, India</p>
+              <p>
+                Extended a RAG application with client-in-context workflows
+                across 5 specialized sub-agents, improving response relevance
+                for nearly 200 financial advisors. Also led migration from
+                ChromaDB to Elasticsearch and from a Python RAG stack to an
+                agentic framework built on Google ADK.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="experience-card">
+              <span class="experience-tag">Jan 2024 - Jan 2026</span>
+              <h3>Software Engineer I</h3>
+              <p class="experience-meta">J.P. Morgan Chase & Co. | Mumbai, India</p>
+              <p>
+                Architected a Spring Boot and AWS Lambda-based offset
+                calculator that processed around 600K records and reduced
+                runtime from nearly 2 hours to about 8 minutes. Enhanced RAG
+                experiences for financial advisors, modernized ETL pipelines,
+                and cut infrastructure costs by migrating workloads from EKS to
+                ECS.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="experience-card">
+              <span class="experience-tag">May 2023 - Jul 2023</span>
+              <h3>Software Engineer Program Intern</h3>
+              <p class="experience-meta">J.P. Morgan Chase & Co. | Mumbai, India</p>
+              <p>
+                Optimized an internal query-language-to-SQL parser using Spring
+                Boot, lowering response latency by about 25 percent. Added
+                Databricks SQL support and built nested retrieval with Apache
+                Calcite, improving query reliability and retrieval speed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="heading-creative-side">Projects</h2>
+          </div>
+        </div>
+
+        <div class="portfolio-isotope mx-5">
+          <div class="row gy-4 portfolio-container">
+            <div class="col-lg-6 col-md-6 portfolio-item">
+              <div class="card-container">
+                <div class="card">
+                  <a
+                    href="https://github.com/Atharvp18/Its-a-Feature"
+                    target="_blank"
+                  >
+                    <div class="card--display">
+                      <i class="material-icons">It's A Feature</i>
+                      <h2>JPMC Code For Good 2022</h2>
+                    </div>
+                    <div class="card--hover">
+                      <h2>It's A Feature</h2>
+                      <p>
+                        Built a web platform for the Foundation for Mother &
+                        Child Health, aiding Anganwadi workers to keep track of
+                        pregnant or newly delivered mothers they have counseled
+                        in remote villages of India to combat malnourishment.
+                        Implemented a smart logic which will guide the workers
+                        to decide which medicines and vaccines to be given via a
+                        simple & easy to understand UI. Collaborated on the
+                        backend using NodeJS, Express, MongoDB, and Firebase
+                        authentication. Impacting maternal and child health in
+                        remote Indian villages.
+                      </p>
+                      <p class="link">Click to see project</p>
+                    </div>
+                  </a>
+                  <div class="card--border"></div>
+                </div>
+              </div>
+            </div>
+            <!-- End Projects Item -->
+            <div class="col-lg-6 col-md-6 portfolio-item">
+              <div class="card-container">
+                <div class="card">
+                  <a
+                    href="https://github.com/Atharvp18/Voyageur-MLSA-Project"
+                    target="_blank"
+                  >
+                    <div class="card--display">
+                      <i class="material-icons">Voyageur</i>
+                      <h2>MLSA 2022</h2>
+                    </div>
+                    <div class="card--hover">
+                      <h2>Voyageur</h2>
+                      <p>
+                        Developed a dynamic full-stack website as part of a
+                        group project, utilizing the MERN Stack. Created a
+                        custom Hotels API through manual web scraping to
+                        facilitate seamless hotel browsing and booking across
+                        India. Implemented login ability with thorough
+                        validation and authentication mechanisms, also
+                        safeguarding the user data by encrypting it before
+                        storing it in a database.
+                      </p>
+                      <p class="link">Click to see project</p>
+                    </div>
+                  </a>
+                  <div class="card--border"></div>
+                </div>
+              </div>
+            </div>
+            <!-- End Projects Item -->
+            <div class="col-lg-6 col-md-6 portfolio-item">
+              <div class="card-container">
+                <div class="card">
+                  <a
+                    href="https://github.com/Atharvp18/Code-Innovation-Series-SVNIT"
+                    target="_blank"
+                  >
+                    <div class="card--display">
+                      <i class="material-icons"> Asterix - A Discord Bot</i>
+                      <h2>Code Innovation Series Hackathon 2021</h2>
+                    </div>
+                    <div class="card--hover">
+                      <h2>Asterix - A Discord Bot</h2>
+                      <p>
+                        A simple discord bot which has the following
+                        commands:<br />
+                        1.Sit: It will remind you to sit straight while gaming
+                        every 15 minutes. <br />2.Sleep: It will remind you to
+                        sleep after a specific amount of time which you can set.
+                        <br />3.Water: It will remind you to drink water while
+                        gaming every 30 minutes.
+                      </p>
+                      <p class="link">Click to see project</p>
+                    </div>
+                  </a>
+                  <div class="card--border"></div>
+                </div>
+              </div>
+            </div>
+            <!-- End Projects Item -->
+            <div class="col-lg-6 col-md-6 portfolio-item">
+              <div class="card-container">
+                <div class="card">
+                  <a
+                    href="https://github.com/Atharvp18/Python-Projects/tree/main/Alien-Invasion"
+                    target="_blank"
+                  >
+                    <div class="card--display">
+                      <i class="material-icons">Alien Invasion</i>
+                      <h2>2021</h2>
+                    </div>
+                    <div class="card--hover">
+                      <h2>Alien Invasion</h2>
+                      <p>
+                        Developed this Game with reference to Eric Matthes
+                        Python Crash Course. The Game however has been further
+                        updated by me. Below mentioned are some of the added
+                        features :-<br />
+                        1.The Ship moves in all directions (W,S,A,D).
+                        <br />2.Sound effects have been added to make the game
+                        more interesting. <br />3.Added a background to make the
+                        game look better.
+                      </p>
+                      <p class="link">Click to see project</p>
+                    </div>
+                  </a>
+                  <div class="card--border"></div>
+                </div>
+              </div>
+            </div>
+            <!-- End Projects Item -->
+          </div>
+          <!-- End Projects Container -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certs" id="certifications">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <div class="section-title">
+              <h2 class="mb-4 heading-education">Certifications</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container-carousel">
+            <div class="carousel">
+              <div class="carousel__face">
+                <span class="span-caro"></span>
+              </div>
+              <div class="carousel__face">
+                <span class="span-caro"></span>
+              </div>
+              <div class="carousel__face">
+                <span class="span-caro"></span>
+              </div>
+              <div class="carousel__face">
+                <span class="span-caro"></span>
+              </div>
+              <div class="carousel__face">
+                <span class="span-caro"></span>
+              </div>
+              <div class="carousel__face">
+                <span class="span-caro"></span>
+              </div>
+              <a
+                class="carousel__face aws-cert-face"
+                href="https://www.credly.com/badges/334d7af3-12d4-47b9-ae81-724a6edd8661/public_url"
+                aria-label="View AWS Certified Developer Associate badge on Credly"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative Side   -->
+    <div id="creative-side" class="animation">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="heading-creative-side">Creative-Side</h2>
+          </div>
+        </div>
+        <img
+          class="paper-plane"
+          id="plane"
+          src="./images/plane.png"
+          alt="plane"
+        />
+        <div class="creative-img" data-aos="fade-right">
+          <img
+            class="painting"
+            src="./images/creative-side.png"
+            alt="paintings"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div class="contact" id="contactme">
+      <div class="container text-left contact-container">
+        <div class="row">
+          <div class="col">
+            <h2 class="section-title heading-education mb-4">Contact Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col contact-content">
+            <div class="text">Get in Touch <br /><br /></div>
+            <p>
+              If you think you might have an opportunity for me, please feel
+              free to reach out to me on the contact information provided below
+              !
+            </p>
+            <div class="icons pb-4">
+              <div class="rowi mb-3">
+                <i class="fas fa-user-graduate"></i>
+                <div class="info">
+                  <div class="head">Name</div>
+                  <div class="sub-title">Atharv Patil</div>
+                </div>
+              </div>
+              <div class="rowi mb-3">
+                <i
+                  class="fas fa-map-marked-alt"
+                  style="position: relative; left: -3px"
+                ></i>
+                <div class="info">
+                  <div class="head" style="position: relative; left: -6px">
+                    Address
+                  </div>
+                  <div class="sub-title" style="position: relative; left: -5px">
+                    Mumbai, Maharashtra, India
+                  </div>
+                </div>
+              </div>
+              <div class="rowi mb-3">
+                <i class="fas fa-at" style="position: relative; left: -2px"></i>
+                <div class="info">
+                  <div class="head" style="position: relative; left: -2px">
+                    Email
+                  </div>
+                  <div class="sub-title" style="position: relative; left: -2px">
+                    atharvsa@usc.edu<br />
+                    patilatharv1801@gmail.com
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social-wrap pb-4">
+          <div class="wrapper">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/atharv-patil-936466206/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Atharvp18" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/atharvp18/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      // Typing Text Animation
+      var typed = new Typed(".typing", {
+        strings: [
+          "Software Engineer II",
+          "Full Stack Developer",
+          "AI Engineer",
+        ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+      });
+
+      // AOS Animations
+      AOS.init();
+
+      // Navbar on Scroll
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          // sticky navbar on scroll script
+          if (this.scrollY > 20) {
+            $(".nav").addClass("nav-scroll");
+          } else {
+            $(".nav").removeClass("nav-scroll");
+          }
+        });
+      });
+
+      // Animated Plane
+      const flightPath = {
+        curviness: 1.25,
+        autoRotate: true,
+        values: [
+          { x: 100, y: -20 },
+          { x: 300, y: 10 },
+          { x: 500, y: 100 },
+          { x: 750, y: -100 },
+          { x: 350, y: -50 },
+          { x: 600, y: 100 },
+          { x: 800, y: 0 },
+          { x: window.innerWidth, y: -250 },
+        ],
+      };
+
+      const tween = new TimelineLite();
+
+      tween.add(
+        TweenLite.to(".paper-plane", 1, {
+          bezier: flightPath,
+          ease: Power1.easeInOut,
+        })
+      );
+
+      const controller = new ScrollMagic.Controller();
+
+      const scene = new ScrollMagic.Scene({
+        triggerElement: ".animation",
+        duration: 3000,
+        triggerHook: 0,
+      })
+        .setTween(tween)
+        .setPin(".animation")
+        .addTo(controller);
+    </script>
+  </body>
+</html>

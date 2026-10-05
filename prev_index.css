@@ -1,0 +1,903 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+/* Home */
+.bgimage {
+  background-image: url("./images/main_bg.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  width: 15%;
+  transition: ease-in-out 0.6s;
+}
+.nav-scroll {
+  scale: 0.85;
+  position: fixed;
+  left: -1%;
+}
+.container-fluid .navbar-item {
+  transition: ease-out 0.3s;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.navbar-item:hover {
+  background-color: #66fcf1;
+  color: black;
+  transform: scale(1.075);
+  padding: 2px 5px 2px 20px;
+}
+.name {
+  font-size: 98px;
+  margin-bottom: 12rem;
+  color: #66fcf1;
+  font-family: Concert One;
+  line-height: 6rem;
+  text-align: left;
+}
+.image-container {
+  display: flex;
+}
+.main-image {
+  scale: 0.75;
+  position: absolute;
+  top: 1.7rem;
+  right: 36.5rem;
+}
+.line {
+  width: 500px;
+  height: 8px;
+  background: #ffffff;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  margin-top: 0.5rem;
+}
+.about-me {
+  font-family: Aleo;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #66fcf1;
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+.btech-style {
+  font-family: Kaushan Script;
+  font-weight: 600;
+}
+.typing-animation .text {
+  font-size: 40px;
+  font-family: Aleo;
+  margin-right: 2rem;
+  margin-top: 8rem;
+}
+.typing-animation .text span {
+  color: #66fcf1;
+  font-weight: 500;
+}
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #66fcf1;
+  position: absolute;
+  left: 79%;
+  bottom: 10%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid #66fcf1;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+/* Education */
+.edu-section {
+  padding: 30px 0;
+}
+.section-title {
+  padding-top: 30px;
+  float: right;
+}
+.heading-education {
+  font-family: Concert One;
+  color: #66fcf1;
+  font-size: 70px;
+}
+.section-sm {
+  padding: 70px 0;
+}
+.edu-card {
+  scale: 0.75;
+}
+#education {
+  padding-bottom: 40px;
+  background-color: #333;
+}
+#education img {
+  background-color: #ffffff;
+  height: 520px;
+  object-fit: contain;
+  padding: 30px;
+  width: 100%;
+}
+.edu-block {
+  -webkit-box-shadow: 10px 13px 23px 2px rgba(102, 252, 241, 0.72);
+  -moz-box-shadow: 10px 13px 23px 2px rgba(102, 252, 241, 0.72);
+  box-shadow: 10px 13px 23px 2px rgba(102, 252, 241, 0.72);
+}
+.edu-block:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 70%;
+  background: #66fcf1;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.45s ease;
+}
+.edu-block .edu-content {
+  padding-left: 40px;
+  font-family: Aleo;
+  background-color: #ffffff;
+}
+.edu-block .overlay-content {
+  padding-left: 50px;
+  position: absolute;
+  content: "";
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  top: 30%;
+  z-index: 3;
+  margin-top: -50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.45s ease;
+}
+.edu-block .overlay-content h4,
+.edu-block .overlay-content span,
+.edu-block .overlay-content a i {
+  color: #000;
+  font-family: Aleo;
+}
+.edu-block .overlay-content p {
+  color: #000;
+  opacity: 0.8;
+  font-family: Aleo;
+  font-size: 20px;
+}
+.edu-block:hover:before {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  width: 98%;
+}
+.edu-block:hover .overlay-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Experience */
+.experience-section {
+  background: #18191f;
+  padding: 30px 0 70px;
+}
+.experience-grid {
+  padding-top: 10px;
+}
+.experience-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), #f0f2f5);
+  border-top: 6px solid #66fcf1;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.22);
+  height: 100%;
+  padding: 28px 28px 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.experience-card:hover {
+  box-shadow: 0 22px 36px rgba(102, 252, 241, 0.16);
+  transform: translateY(-8px);
+}
+.experience-tag {
+  color: #0b0c10;
+  display: inline-block;
+  font-family: Aleo;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.experience-card h3 {
+  color: #111111;
+  font-family: Concert One;
+  font-size: 34px;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+.experience-meta {
+  color: #2f3a45;
+  font-family: Aleo;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.experience-card p {
+  color: #2f3a45;
+  font-family: Aleo;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Projects */
+.projects {
+  background-color: #0b0c10;
+}
+.card-container {
+  flex: 300px;
+  margin: 30px;
+}
+.card-container .card {
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+}
+.card-container .card a {
+  padding: 30px;
+  width: 100%;
+  height: 400px;
+  border: 2px solid black;
+  background: white;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: 0.25s ease;
+}
+.card-container .card a:hover {
+  transform: translate(-30px, -30px);
+  border-color: #5bc0eb;
+}
+.card-container .card a:hover .card--display {
+  display: none;
+}
+.card-container .card a:hover .card--hover {
+  display: block;
+}
+.card-container .card a .card--display i {
+  font-size: 40px;
+  font-family: Aleo;
+  margin-top: 200px;
+}
+.card-container .card a .card--display h2 {
+  font-family: Aleo;
+  margin: 20px 0 0;
+}
+.card-container .card a .card--hover {
+  display: none;
+}
+.card-container .card a .card--hover h2 {
+  font-family: Aleo;
+  margin: 20px 0;
+}
+.card-container .card a .card--hover p {
+  font-weight: normal;
+  font-family: Aleo;
+  line-height: 1.5;
+}
+.card-container .card a .card--hover p.link {
+  margin: 20px 0 0;
+  font-weight: bold;
+  font-family: Aleo;
+  color: #5bc0eb;
+}
+.card-container .card .card--border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 2px dashed black;
+  z-index: -1;
+}
+.card-container .card.card--dark a {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+.card-container .card.card--dark a .card--hover .link {
+  color: #fde74c;
+}
+
+/* Certificates */
+.certs {
+  background-color: #333;
+  overflow: hidden;
+  height: 100vh;
+}
+.heading-certifications {
+  font-family: Concert One;
+  color: #66fcf1;
+  font-size: 70px;
+  padding-top: 30px;
+  position: relative;
+  left: 58rem;
+}
+.container-carousel {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face {
+  position: absolute;
+  width: 336px;
+  height: 236px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+  overflow: hidden;
+}
+.span-caro {
+  margin: auto;
+  font-size: 2rem;
+  color: white;
+  font-family: Aleo;
+  text-align: center;
+}
+.carousel__face:nth-child(1) {
+  background-image: url("./images/Certificates/NEO_certificate.png");
+  transform: rotateY(0deg) translateZ(430px);
+}
+.carousel__face:nth-child(2) {
+  background-image: url("./images/Certificates/udemy_mern_course.jpg");
+  transform: rotateY(51.43deg) translateZ(430px);
+}
+.carousel__face:nth-child(3) {
+  background-image: url("./images/Certificates/coursera_programming_in_c_week_1.png");
+  transform: rotateY(102.86deg) translateZ(430px);
+}
+.carousel__face:nth-child(4) {
+  background-image: url("./images/Certificates/coursera_programming_in_c_week_2.png");
+  transform: rotateY(154.29deg) translateZ(430px);
+}
+.carousel__face:nth-child(5) {
+  background-image: url("./images//Certificates/ETG_internship.png");
+  transform: rotateY(205.72deg) translateZ(430px);
+}
+.carousel__face:nth-child(6) {
+  background-image: url("./images/Certificates/lets_upgrade.png");
+  transform: rotateY(257.15deg) translateZ(430px);
+}
+.carousel__face:nth-child(7) {
+  background-color: #ffffff;
+  background-image: url("./images/Certificates/aws_developer_associate.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+  transform: rotateY(308.58deg) translateZ(430px);
+}
+.aws-cert-face {
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.aws-cert-face:hover {
+  color: white;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+/* Creative Side */
+#creative-side {
+  background: #0b0c10;
+  overflow: hidden;
+  padding: 30px;
+}
+.heading-creative-side {
+  font-family: Concert One;
+  color: #66fcf1;
+  font-size: 70px;
+  padding-top: 30px;
+}
+.animation {
+  position: relative;
+  overflow: hidden;
+}
+.paper-plane {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  z-index: 9;
+  overflow: hidden;
+}
+.painting {
+  scale: 0.8;
+  position: relative;
+  top: -6rem;
+  margin-bottom: -8rem;
+}
+.creative-img {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Contact Me */
+.contact {
+  background-color: #333;
+  overflow: hidden;
+  padding: 30px;
+}
+.contact-container {
+  width: 80%;
+}
+.heading-contact {
+  font-family: Concert One;
+  color: #66fcf1;
+  font-size: 70px;
+  padding-top: 30px;
+  position: relative;
+  left: 71.5%;
+}
+.contact-content .text {
+  font-size: 20px;
+  font-family: Aleo;
+  font-weight: 600;
+  color: white;
+  padding-top: 80px;
+}
+.rowi {
+  display: flex;
+}
+.contact-content p {
+  font-size: 20px;
+  font-family: Aleo;
+  color: white;
+}
+.contact-content .icons {
+  margin: 30px 50px 20px 0px;
+}
+.contact-content .rowi i {
+  font-size: 25px;
+  color: #66fcf1;
+  margin: 15px 30px 0 0;
+}
+.contact-container .info .head {
+  color: white;
+  font-family: Aleo;
+  font-size: 20px;
+}
+.contact-container .info .sub-title {
+  color: white;
+  font-size: 20px;
+  font-family: Aleo;
+}
+.social-wrap {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  position: relative;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 25.5%;
+  transform: translate(-50%, -50%);
+}
+ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: 0.5s;
+}
+ul li i {
+  position: relative;
+  top: -1.5px;
+}
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #66fcf1;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #66fcf1;
+}
+ul li a:hover {
+  color: #66fcf1;
+  box-shadow: 0 0 5px #66fcf1;
+  text-shadow: 0 0 5px #66fcf1;
+}
+
+/* Responsive styling for several screens */
+@media (max-width: 1104px) and (min-width: 1026px) {
+  .main-image {
+    right: 17rem;
+    top: -1rem;
+  }
+  .name {
+    position: relative;
+    left: 17rem;
+    top: -14rem;
+  }
+  .typing-animation .text {
+    position: relative;
+    top: 14rem;
+    left: -15rem;
+  }
+  .line {
+    position: relative;
+    top: 14rem;
+    left: -16rem;
+  }
+  .about-me {
+    position: relative;
+    top: 14rem;
+    left: -15.5rem;
+  }
+  .resp-nav {
+    display: none;
+  }
+  .scroll-down {
+    display: none;
+  }
+}
+
+/* Responsive for Ipad pro */
+@media (max-width: 1025px) and (min-width: 946px) {
+  .main-image {
+    right: 15rem;
+    top: 12rem;
+    scale: 1.1;
+  }
+  .name {
+    position: relative;
+    left: 12rem;
+    top: -25rem;
+  }
+  .typing-animation .text {
+    position: relative;
+    top: 24rem;
+    left: -13rem;
+  }
+  .line {
+    position: relative;
+    top: 24rem;
+    left: -14rem;
+  }
+  .about-me {
+    position: relative;
+    top: 24rem;
+    left: -13.5rem;
+    width: 30rem;
+  }
+  .resp-nav {
+    display: none;
+  }
+  .scroll-down {
+    display: none;
+  }
+}
+
+@media (max-width: 947px) and (min-width: 830px) {
+  .main-image {
+    right: 14rem;
+    top: 2rem;
+    /* scale: 1.1 */
+  }
+  .name {
+    position: relative;
+    top: 3rem;
+    left: 10rem;
+  }
+  .typing-animation .text {
+    position: relative;
+    left: 2rem;
+  }
+  .line {
+    position: relative;
+    left: 15.5rem;
+    width: 439px;
+  }
+  .about-me {
+    position: relative;
+    width: 27rem;
+    left: 16rem;
+  }
+  .resp-nav {
+    display: none;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .card-container .card a .card--display i {
+    font-size: 30px;
+  }
+}
+
+/* Responsive for Ipad Air */
+@media (max-width: 820px) and (min-width: 768px) {
+  .main-image {
+    right: 8rem;
+    top: 7rem;
+    scale: 0.9;
+  }
+  .name {
+    position: relative;
+    top: 3rem;
+    left: 7rem;
+  }
+  .typing-animation .text {
+    position: relative;
+    left: 2rem;
+  }
+  .line {
+    position: relative;
+    left: 10.5rem;
+    width: 463px;
+  }
+  .about-me {
+    position: relative;
+    width: 28rem;
+    left: 11rem;
+  }
+  .resp-nav {
+    display: none;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .card-container .card a .card--display i {
+    font-size: 30px;
+  }
+}
+
+/* Responsive styling for Ipad Mini*/
+@media (max-width: 769px) and (min-width: 691px) {
+  .main-image {
+    right: 8rem;
+    top: 2rem;
+  }
+  .name {
+    position: relative;
+    top: 2rem;
+    left: 5rem;
+  }
+  .typing-animation .text {
+    position: relative;
+    left: 2rem;
+  }
+  .line {
+    position: relative;
+    left: 10rem;
+    width: 439px;
+  }
+  .about-me {
+    position: relative;
+    width: 27rem;
+    left: 10.5rem;
+  }
+  .resp-nav {
+    display: none;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .card-container .card a .card--display i {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 691px) and (min-width: 500px) {
+  .main-image {
+    right: 3rem;
+    top: 2rem;
+  }
+  .name {
+    position: relative;
+    top: 2rem;
+    left: 5rem;
+  }
+  .typing-animation .text {
+    position: relative;
+    left: 2rem;
+  }
+  .line {
+    position: relative;
+    left: 7.5rem;
+    width: 439px;
+  }
+  .about-me {
+    position: relative;
+    width: 27rem;
+    left: 8rem;
+  }
+  .resp-nav {
+    display: none;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .card-container .card a .card--display i {
+    font-size: 30px;
+  }
+}
+
+/* Responsive styling for Iphone 6/7/8 plus */
+@media (max-width: 415px) and (min-width: 400px) {
+  .main-image {
+    right: -3rem;
+    top: -7rem;
+    scale: 0.5;
+  }
+  .name {
+    position: relative;
+    top: 3rem;
+    left: 5rem;
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .typing-animation .text {
+    position: relative;
+    left: 2rem;
+    font-size: 25px;
+  }
+  .line {
+    position: relative;
+    left: 2.5rem;
+    width: 321px;
+  }
+  .about-me {
+    position: relative;
+    width: 25rem;
+    left: 0rem;
+    font-size: 15px;
+  }
+  .resp-nav {
+    display: none;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .card-container .card a .card--display i {
+    font-size: 30px;
+  }
+  .heading-education {
+    font-size: 64px;
+  }
+  #education img {
+    height: 320px;
+    padding: 20px;
+  }
+}
+
+/* Responsive styling for Iphone 12,X,6,7,8*/
+@media (max-width: 400px) {
+  .main-image {
+    right: -3rem;
+    top: -9rem;
+    scale: 0.45;
+  }
+  .name {
+    position: relative;
+    top: 3rem;
+    left: 2.5rem;
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .typing-animation .text {
+    position: relative;
+    left: 2rem;
+    font-size: 25px;
+  }
+  .line {
+    position: relative;
+    left: 1rem;
+    width: 321px;
+  }
+  .about-me {
+    position: relative;
+    width: 22rem;
+    top: -0.5rem;
+    font-size: 15px;
+  }
+  .resp-nav {
+    display: none;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .card-container .card a .card--display i {
+    font-size: 25px;
+  }
+  .heading-education {
+    font-size: 64px;
+  }
+  #education img {
+    height: 300px;
+    padding: 20px;
+  }
+}
+/* End of responsive styling */
